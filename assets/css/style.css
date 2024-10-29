@@ -39,7 +39,6 @@ header {
     box-shadow: 0 5px 15px black ;
 }
 
-/********Exploration********/
 
 .exploration {
     display: flex;
@@ -48,7 +47,7 @@ header {
     background-color: #eaeaea;
 }
 
-/********Foncionnement********/
+/********Fonctionnement********/
 
 .fonctionnement{    
     display: flex;

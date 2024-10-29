@@ -1,0 +1,10 @@
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+
+    & .etapes{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+    }
+}

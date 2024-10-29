@@ -1,0 +1,63 @@
+
+
+:root {
+    --primary-color : #9356dc;
+    --secondary-color : #FF79DA;
+    --tertiary-color : #99e2d0;
+    --main-color: #f3f3f3;
+
+}
+
+body{
+    margin: 0;
+
+}
+main {
+    background-color: var(--main-color);
+}
+
+
+/********HEADER********/
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/********Localisation********/
+
+.localisation{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    background-color: #eaeaea;
+    box-shadow: 0 5px 15px black ;
+}
+
+/********Exploration********/
+
+.exploration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+/********Foncionnement********/
+
+.fonctionnement{    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.etape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,7 +1,9 @@
 /********Mixins********/
+/********Fonctionnement********/
 .fonctionnement {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 .fonctionnement .etapes {
   display: flex;
@@ -13,5 +15,5 @@
   width: 186px;
   height: 50px;
   background: linear-gradient(#9356DC, #FF79DA);
-  border-radius: 5px;
+  border-radius: 30px;
 }/*# sourceMappingURL=home.css.map */

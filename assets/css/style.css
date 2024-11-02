@@ -48,10 +48,13 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #eaeaea;
-  padding: 30px 0 30px 0;
+  padding: 20px 15px 40px 15px;
 }
-
-.button-color {
+.exploration h1 {
+  margin-bottom: 0;
+}
+.exploration .button-color {
+  margin: 20px;
   width: 186px;
   height: 50px;
   background: linear-gradient(#9356dc, #FF79DA);
@@ -59,8 +62,7 @@ header {
   text-decoration: none;
   filter: drop-shadow(0 4px 4px #000000);
 }
-
-.button-color > .button-text {
+.exploration .button-text {
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
@@ -71,7 +73,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  margin: 30px 15px 30px 15px;
+  margin: 30px 15px 40px 15px;
 }
 .fonctionnement .etape-cards {
   display: flex;
@@ -88,7 +90,6 @@ header {
   background-color: #eaeaea;
   border-radius: 20px;
   box-shadow: 0 4px 15px black; /*15% color*/
-  gap: 15px;
   align-items: center;
 }
 .fonctionnement .etape-cards .number {
@@ -101,32 +102,13 @@ header {
   border-radius: 50%;
   padding: 6px;
   color: #ffffff;
-}
-.fonctionnement .etape {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  background-color: #eaeaea;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px black; /*15% color*/
-  gap: 15px;
-  align-items: center;
-}
-.fonctionnement .number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  background-color: #9356dc;
-  border-radius: 50%;
-  padding: 6px;
-  color: #ffffff;
+  position: relative;
+  top: 0px;
+  left: -15px;
 }
 .fonctionnement i {
   color: grey;
+  margin-right: 15px;
 }
 
 .fonctionnement > h1 {

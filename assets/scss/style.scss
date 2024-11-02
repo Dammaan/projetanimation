@@ -72,16 +72,23 @@ header {
     flex-direction: column;
     align-items: center;
     background-color:$main-secondary-color;
-    padding: 30px 0 30px 0;
-}
+    padding: 20px 15px 40px 15px;
 
-.button-color {
-    @include button-color()
-}
+    & h1 {
+        margin-bottom: 0;
+     }
 
-.button-color > .button-text {
+    & .button-color {
+        margin: 20px;
+        @include button-color()
+    }
+
+    & .button-text {
     @include button-text()
+    }
+    
 }
+
 
 /********Fonctionnement********/
 
@@ -89,7 +96,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: $main-color;
-    margin: 30px 15px 30px 15px;
+    margin: 30px 15px 40px 15px;
     
 
     & .etape-cards{
@@ -107,8 +114,7 @@ header {
             background-color: $main-secondary-color;
             border-radius: 20px;
             box-shadow: 0 4px 15px black; /*15% color*/
-            gap: 15px;
-            align-items: center;
+            align-items: center; 
         }
 
         & .number {
@@ -121,36 +127,15 @@ header {
         border-radius: 50%;
         padding: 6px;
         color: $main-color;
+        position: relative;
+        top: 0px;
+        left: -15px;
         }
     }
-    
-    & .etape{
-            width: 90%;
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            align-items: center;
-            background-color: $main-secondary-color;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px black; /*15% color*/
-            gap: 15px;
-            align-items: center;
-    }
 
-    & .number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10px;
-        height: 10px;
-        background-color: $primary-color;
-        border-radius: 50%;
-        padding: 6px;
-        color: $main-color;
-    }
-
-    & i {
+        & i {
         color: grey;
+        margin-right: 15px;
     }
 }
 

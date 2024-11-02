@@ -1,10 +1,25 @@
-@charset "UTF-8";
+/********Variable********/
+h1 {
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: lighter;
+  text-align: center;
+}
+
 body {
   margin: 0;
 }
 
 main {
-  background-color: var(--main-color);
+  background-color: #ffffff;
+  font-family: Roboto;
 }
 
 /********HEADER********/
@@ -14,7 +29,6 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-  background-color: var(--main-secondary-color);
 }
 
 /********Localisation********/
@@ -25,6 +39,7 @@ header {
   align-items: center;
   gap: 17px;
   box-shadow: 0 5px 15px black;
+  background-color: #f6f6f6;
 }
 
 /********Exploration********/
@@ -32,22 +47,166 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0 30px 0;
+  background-color: #f6f6f6;
+  padding: 30px 0 30px 0;
+}
+
+.button-color {
+  width: 186px;
+  height: 50px;
+  background: linear-gradient(#9356dc, #FF79DA);
+  border-radius: 30px;
+  text-decoration: none;
+  filter: drop-shadow(0 4px 4px #000000);
+}
+
+.button-color > .button-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 /********Fonctionnement********/
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  background-color: var(--main-secondary-color);
+  background-color: #ffffff;
+  margin: 30px 0 30px 0;
 }
-
-.etape {
+.fonctionnement .etape-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 15px;
+}
+.fonctionnement .etape-cards .etape {
+  width: 90%;
   display: flex;
   flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px black; /*15% color*/
+  gap: 15px;
+  align-items: center;
+}
+.fonctionnement .etape-cards .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  padding: 6px;
+  color: #ffffff;
+}
+.fonctionnement .etape {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px black; /*15% color*/
+  gap: 15px;
+  align-items: center;
+}
+.fonctionnement .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  padding: 6px;
+  color: #ffffff;
+}
+
+.fonctionnement > h1 {
+  text-align: start;
+  margin: 15px;
+}
+
+.etape > h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/********RESTAURANT********/
+.restaurant {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.restaurant .restaurant-card {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 251px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px black; /*25% color*/
+}
+.restaurant .restaurant-card img {
+  object-fit: cover;
+  height: 175px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant .restaurant-card .card-informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 15px 0 10px;
+}
+.restaurant .restaurant-card .card-informations .informations-text {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant .restaurant-card .card-informations .informations-icon {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
+.restaurant h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.restaurant h3 {
+  font-size: 17px;
+  font-weight: lighter;
+  margin-top: 0;
+}
+
+/********FOOTER********/
 footer {
-  background-color: £;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px 30px 15px;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 30px;
+}
+footer .footer-nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .footer-nav i {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

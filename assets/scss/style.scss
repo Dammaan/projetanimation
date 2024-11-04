@@ -2,9 +2,11 @@
 $primary-color: #9356dc;
 $secondary-color: #FF79DA;
 $tertiary-color: #99e2d0;
+$quertary-color: #008766;
 $main-color: #ffffff;
 $main-secondary-color: #eaeaea;
 $main-tertiary-color: #353535;
+
 
 h1 {
     font-size: 24px;
@@ -171,13 +173,32 @@ text-align: start;
             border-radius: 15px;
             background-color: $main-color;
             box-shadow: 0 4px 4px black; /*25% color*/
+            position: relative;
        
 
             & img {
                 object-fit: cover;
-                height: 175px;
+                height: 180px;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
+            }
+
+            & .restaurant-nouveau {
+                    background-color: $tertiary-color;
+                    color: $quertary-color;
+                    display: flex;
+                    width: 80px;
+                    height: 29px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    justify-content: center;
+                    align-items: center; 
+
+                    & h3{
+                    font-size: 14px;
+                    font-weight:700;
+                    }
             }
 
             & .card-informations{
@@ -187,9 +208,21 @@ text-align: start;
             margin: 0 15px 0 10px;
     
                 & .informations-text {
-                display: flex;
-                flex-direction: column;
-                }
+                    display: flex;
+                    flex-direction: column;
+
+                    & h3{
+                        font-size: 17px;
+                        font-weight: lighter;
+                        margin-top: 0;
+                    }
+
+                    & h2 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-bottom: 0;
+                    }
+                    }
     
                 & .informations-icon{
                 display: flex;
@@ -205,17 +238,7 @@ text-align: start;
     text-align: start;
 }
 
-.restaurant h2{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
 
-.restaurant h3 {
-    font-size: 17px;
-    font-weight: lighter;
-    margin-top: 0;
-}
 
 /********FOOTER********/
 

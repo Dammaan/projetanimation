@@ -142,12 +142,29 @@ header {
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0 4px 4px black; /*25% color*/
+  position: relative;
 }
 .restaurant .restaurant-informations .restaurant-card img {
   object-fit: cover;
-  height: 175px;
+  height: 180px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+.restaurant .restaurant-informations .restaurant-card .restaurant-nouveau {
+  background-color: #99e2d0;
+  color: #008766;
+  display: flex;
+  width: 80px;
+  height: 29px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant .restaurant-informations .restaurant-card .restaurant-nouveau h3 {
+  font-size: 14px;
+  font-weight: 700;
 }
 .restaurant .restaurant-informations .restaurant-card .card-informations {
   display: flex;
@@ -159,6 +176,16 @@ header {
   display: flex;
   flex-direction: column;
 }
+.restaurant .restaurant-informations .restaurant-card .card-informations .informations-text h3 {
+  font-size: 17px;
+  font-weight: lighter;
+  margin-top: 0;
+}
+.restaurant .restaurant-informations .restaurant-card .card-informations .informations-text h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
 .restaurant .restaurant-informations .restaurant-card .card-informations .informations-icon {
   display: flex;
   flex-direction: column;
@@ -167,18 +194,6 @@ header {
 
 .restaurant > h1 {
   text-align: start;
-}
-
-.restaurant h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.restaurant h3 {
-  font-size: 17px;
-  font-weight: lighter;
-  margin-top: 0;
 }
 
 /********FOOTER********/

@@ -143,6 +143,7 @@ header {
   background-color: #ffffff;
   box-shadow: 0 4px 4px black; /*25% color*/
   position: relative;
+  text-decoration: none;
 }
 .restaurant .restaurant-informations .restaurant-card img {
   object-fit: cover;
@@ -215,4 +216,6 @@ footer .footer-nav a {
 }
 footer .footer-nav i {
   color: #ffffff;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/********Menu*****************************************************************************************//*# sourceMappingURL=style.css.map */

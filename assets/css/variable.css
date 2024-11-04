@@ -1,1 +1,23 @@
-/********Variable********//*# sourceMappingURL=variable.css.map */
+/********Variable********/
+h1 {
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: lighter;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #ffffff;
+  font-family: Roboto;
+}/*# sourceMappingURL=variable.css.map */

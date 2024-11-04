@@ -6,3 +6,27 @@ $quertary-color: #008766;
 $main-color: #ffffff;
 $main-secondary-color: #eaeaea;
 $main-tertiary-color: #353535;
+
+
+h1 {
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: lighter;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: $main-color;
+    font-family: Roboto;
+}

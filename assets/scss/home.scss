@@ -1,50 +1,6 @@
-/********Variable********/ 
-$primary-color: #9356dc;
-$secondary-color: #FF79DA;
-$tertiary-color: #99e2d0;
-$quertary-color: #008766;
-$main-color: #ffffff;
-$main-secondary-color: #eaeaea;
-$main-tertiary-color: #353535;
+@import 'variable.css' ;
+@import 'mixins.css' ;
 
-
-h1 {
-    font-size: 24px;
-    font-family: Roboto;
-    font-weight: bold;
-    text-align: center;
-}
-
-h2 {
-    font-size: 18px;
-    font-family: Roboto;
-    font-weight: lighter;
-    text-align: center;
-}
-
-body {
-    margin: 0;
-}
-
-main {
-    background-color: $main-color;
-    font-family: Roboto;
-}
-
-@mixin button-color {
-    width: 186px;
-    height: 50px;
-    background: linear-gradient($primary-color, $secondary-color);
-    border-radius: 30px;
-    text-decoration: none;
-    filter: drop-shadow(0 4px 4px #000000);
-}
-
-@mixin button-text {
-    color: $main-color;
-    font-size: 16px;
-    font-weight: normal;
-}
 
 /********HEADER********/
 header {
@@ -81,7 +37,6 @@ header {
      }
 
     & .button-color {
-        margin: 20px;
         @include button-color()
     }
 
@@ -115,8 +70,7 @@ header {
             align-items: center;
             background-color: $main-secondary-color;
             border-radius: 20px;
-            box-shadow: 0 4px 15px black; /*15% color*/
-            align-items: center; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
         }
 
         & .number {
@@ -172,7 +126,7 @@ text-align: start;
             height: 251px;
             border-radius: 15px;
             background-color: $main-color;
-            box-shadow: 0 4px 4px black; /*25% color*/
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
             position: relative;
             text-decoration: none;
        
@@ -198,7 +152,7 @@ text-align: start;
 
                     & h3{
                     font-size: 14px;
-                    font-weight:700;
+                    font-weight:600;
                     }
             }
 
@@ -270,6 +224,4 @@ footer {
 
 }
 
-
-/********Menu*****************************************************************************************/
 

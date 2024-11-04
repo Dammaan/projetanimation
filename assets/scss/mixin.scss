@@ -1,2 +1,17 @@
+@import 'variable.css' ;
 
+@mixin button-color {
+    width: 186px;
+    height: 50px;
+    background: linear-gradient($primary-color, $secondary-color);
+    border-radius: 30px;
+    text-decoration: none;
+    filter: drop-shadow(0 4px 4px #00000043);
+}
+
+@mixin button-text {
+    color: $main-color;
+    font-size: 16px;
+    font-weight: normal;
+}
 

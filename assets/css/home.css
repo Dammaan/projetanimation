@@ -54,13 +54,12 @@ header {
   margin-bottom: 0;
 }
 .exploration .button-color {
-  margin: 20px;
   width: 186px;
   height: 50px;
   background: linear-gradient(#9356dc, #FF79DA);
   border-radius: 30px;
   text-decoration: none;
-  filter: drop-shadow(0 4px 4px #000000);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.262745098));
 }
 .exploration .button-text {
   color: #ffffff;
@@ -89,8 +88,7 @@ header {
   align-items: center;
   background-color: #eaeaea;
   border-radius: 20px;
-  box-shadow: 0 4px 15px black; /*15% color*/
-  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .fonctionnement .etape-cards .number {
   display: flex;
@@ -141,7 +139,7 @@ header {
   height: 251px;
   border-radius: 15px;
   background-color: #ffffff;
-  box-shadow: 0 4px 4px black; /*25% color*/
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
   text-decoration: none;
 }
@@ -165,7 +163,7 @@ header {
 }
 .restaurant .restaurant-informations .restaurant-card .restaurant-nouveau h3 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .restaurant .restaurant-informations .restaurant-card .card-informations {
   display: flex;
@@ -216,6 +214,4 @@ footer .footer-nav a {
 }
 footer .footer-nav i {
   color: #ffffff;
-}
-
-/********Menu*****************************************************************************************//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=home.css.map */

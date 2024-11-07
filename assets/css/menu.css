@@ -1,6 +1,5 @@
-@import 'variable.css';
-@import 'mixins.css';
 /********Variable********/
+@import 'variable.css';
 h1 {
   font-size: 24px;
   font-family: Roboto;
@@ -15,14 +14,6 @@ h2 {
   text-align: center;
 }
 
-h3 {
-  font-family: Roboto;
-}
-
-h4 {
-  font-family: roboto;
-}
-
 body {
   margin: 0;
 }
@@ -32,7 +23,6 @@ main {
   font-family: Roboto;
 }
 
-/********Variable********/
 /********HEADER********/
 header {
   width: 100%;

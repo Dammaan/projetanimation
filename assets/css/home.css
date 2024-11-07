@@ -14,6 +14,14 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: Roboto;
+}
+
+h4 {
+  font-family: Roboto;
+}
+
 body {
   margin: 0;
 }
@@ -133,6 +141,10 @@ header {
   gap: 15px;
   align-items: center;
 }
+.restaurant .restaurant-informations a {
+  text-decoration: none;
+  color: #353535;
+}
 .restaurant .restaurant-informations .restaurant-card {
   display: flex;
   flex-direction: column;
@@ -190,6 +202,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.restaurant .restaurant-informations .restaurant-card .card-informations .informations-icon :hover {
+  color: red;
 }
 
 .restaurant > h1 {

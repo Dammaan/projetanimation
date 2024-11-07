@@ -120,7 +120,12 @@ text-align: start;
         gap: 15px;
         align-items: center;
 
-        & .restaurant-card{
+        & a { 
+            text-decoration: none;
+            color: $main-tertiary-color;
+        }
+
+        & .restaurant-card {
             display: flex;
             flex-direction: column;
             width: 340px;
@@ -130,7 +135,7 @@ text-align: start;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
             position: relative;
             text-decoration: none;
-       
+            
 
             & img {
                 object-fit: cover;
@@ -184,6 +189,11 @@ text-align: start;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                //z-index: 1000;
+                :hover{
+                    color: red;
+                }
+                
                 }
             }
         }

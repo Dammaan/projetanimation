@@ -49,7 +49,7 @@ header .back-button {
 }
 header .logo-header {
   display: flex;
-  margin-right: 50%;
+  margin: auto;
 }
 
 /********Menu********/

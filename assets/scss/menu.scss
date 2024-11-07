@@ -75,6 +75,7 @@ header {
     align-items: center;
     padding-top: 10px;
 
+
     & .back-button {
         color: $main-tertiary-color;
         text-decoration: none;
@@ -83,7 +84,7 @@ header {
 
     & .logo-header {
         display: flex;
-        margin-right: 50%;
+        margin:auto
         
     }
 }

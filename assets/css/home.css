@@ -65,7 +65,7 @@ header {
 .exploration .button-color {
   width: 186px;
   height: 50px;
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 30px;
   text-decoration: none;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.262745098));
@@ -157,6 +157,7 @@ header {
   text-decoration: none;
 }
 .restaurant .restaurant-informations .restaurant-card img {
+  width: 100%;
   object-fit: cover;
   height: 180px;
   border-top-left-radius: 15px;
@@ -198,12 +199,16 @@ header {
   font-weight: bold;
   margin-bottom: 0;
 }
-.restaurant .restaurant-informations .restaurant-card .card-informations .informations-icon {
+
+.informations-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+  bottom: 35px;
+  right: 25px;
 }
-.restaurant .restaurant-informations .restaurant-card .card-informations .informations-icon :hover {
+.informations-icon :hover {
   color: red;
 }
 

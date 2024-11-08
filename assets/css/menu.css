@@ -14,6 +14,14 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: Roboto;
+}
+
+h4 {
+  font-family: Roboto;
+}
+
 body {
   margin: 0;
 }
@@ -136,7 +144,7 @@ section .CTA .button-color {
   margin: 20px;
   width: 186px;
   height: 50px;
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 30px;
   text-decoration: none;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.262745098));

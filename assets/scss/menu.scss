@@ -134,7 +134,7 @@ section {
 
       & .button-color {
         margin: 20px;
-        @include button-color()
+        @include button-color();
         }
 
         & .button-text {

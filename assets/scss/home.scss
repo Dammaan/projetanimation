@@ -12,6 +12,7 @@ header {
     padding-top: 10px;
 }
 
+
 /********Localisation********/
 .localisation {
     display: flex;
@@ -138,6 +139,7 @@ text-align: start;
             
 
             & img {
+                width: 100%;
                 object-fit: cover;
                 height: 180px;
                 border-top-left-radius: 15px;
@@ -185,21 +187,25 @@ text-align: start;
                     }
                     }
     
-                & .informations-icon{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                //z-index: 1000;
-                :hover{
-                    color: red;
-                }
                 
-                }
             }
         }
     }
 }
 
+.informations-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+
+    :hover{
+        color: red;
+    }
+    
+}
 .restaurant>h1{
     text-align: start;
 }

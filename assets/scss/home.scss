@@ -194,16 +194,34 @@ text-align: start;
 }
 
 .informations-icon{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
     bottom: 35px;
     right: 25px;
 
-    :hover{
-        color: red;
+    .heart-not{
+    display: flex; 
     }
+
+    .heart-active{
+    display: none;
+    transform: scale(0);
+    }
+    
+
+    &:active{
+        .heart-not {
+            display: none;
+        }
+        .heart-active{
+            display: flex;
+            transform: scale(1) ;
+            transition:  5000ms ease-in-out;
+        }
+        color:red
+    }
+
     
 }
 .restaurant>h1{

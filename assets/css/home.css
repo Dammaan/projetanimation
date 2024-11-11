@@ -201,15 +201,29 @@ header {
 }
 
 .informations-icon {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   bottom: 35px;
   right: 25px;
 }
-.informations-icon :hover {
+.informations-icon .heart-not {
+  display: flex;
+}
+.informations-icon .heart-active {
+  display: none;
+  transform: scale(0);
+}
+.informations-icon:active {
   color: red;
+}
+.informations-icon:active .heart-not {
+  display: none;
+}
+.informations-icon:active .heart-active {
+  display: flex;
+  transform: scale(1);
+  transition: 5000ms ease-in-out;
 }
 
 .restaurant > h1 {

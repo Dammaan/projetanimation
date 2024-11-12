@@ -60,7 +60,7 @@ section img {
   object-fit: cover;
 }
 section .menu {
-  background-color: #ffffff;
+  background-color: #eaeaea;
   position: relative;
   top: -100px;
   left: 0;
@@ -88,6 +88,35 @@ section .menu .card-informations .informations-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+section .menu .card-informations .informations-icon .heart-not {
+  display: flex;
+}
+section .menu .card-informations .informations-icon .heart-active {
+  display: none;
+  transform: scale(0);
+}
+section .menu .card-informations .informations-icon:active {
+  color: red;
+}
+section .menu .card-informations .informations-icon:active .heart-not {
+  display: none;
+}
+section .menu .card-informations .informations-icon:active .heart-active {
+  display: flex;
+  transform: scale(1);
+  transition: 1000ms ease-in-out;
+}
+section .menu .card-informations .informations-icon:hover {
+  color: red;
+}
+section .menu .card-informations .informations-icon:hover .heart-not {
+  display: none;
+}
+section .menu .card-informations .informations-icon:hover .heart-active {
+  display: flex;
+  transform: scale(1);
+  transition: 1000ms ease-in-out;
 }
 section .menu .card-menu {
   display: flex;
@@ -174,4 +203,45 @@ footer .footer-nav a {
 }
 footer .footer-nav i {
   color: #ffffff;
+}
+
+/********Responsive********/
+@media (min-width: 1024px) {
+  /********Menu********/
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .card-informations {
+    gap: 20px;
+  }
+  section .menu {
+    width: 1055px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section .menu .card-menu {
+    margin-top: 0;
+  }
+  section .menu .card-menu .card-plats {
+    width: 634px;
+  }
+  /********FOOTER********/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    padding: 30px 50px 20px 25px;
+    gap: 60px;
+  }
+  footer .footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=menu.css.map */

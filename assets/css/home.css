@@ -1,5 +1,6 @@
 /********Variable********/
 @import 'variable.css';
+@import 'keyframes.css';
 h1 {
   font-size: 24px;
   font-family: Roboto;
@@ -29,6 +30,44 @@ body {
 main {
   background-color: #ffffff;
   font-family: Roboto;
+}
+
+/********LOADER********/
+.loader {
+  background-color: #353535;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: loader 1s linear;
+  opacity: 0;
+}
+.loader .--logo {
+  margin: 100px 0 100px 0;
+  width: 250px;
+}
+.loader .--icon {
+  color: #ffffff;
+  animation: animation-loader 3s linear infinite;
+  margin-bottom: 75px;
+}
+.loader .--text {
+  color: #ffffff;
+  position: relative;
+}
+.loader .--text h1 {
+  font-weight: lighter;
+}
+.loader .--text .text-1 {
+  opacity: 1;
+}
+.loader .--text .text-2 {
+  opacity: 0;
 }
 
 /********HEADER********/
@@ -223,7 +262,18 @@ header {
 .informations-icon:active .heart-active {
   display: flex;
   transform: scale(1);
-  transition: 5000ms ease-in-out;
+  transition: 1000ms ease-in-out;
+}
+.informations-icon:hover {
+  color: red;
+}
+.informations-icon:hover .heart-not {
+  display: none;
+}
+.informations-icon:hover .heart-active {
+  display: flex;
+  transform: scale(1);
+  transition: 1000ms ease-in-out;
 }
 
 .restaurant > h1 {

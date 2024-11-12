@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********Variable********/
 @import 'variable.css';
 h1 {
@@ -95,28 +96,17 @@ section .menu .card-informations .informations-icon .heart-not {
 section .menu .card-informations .informations-icon .heart-active {
   display: none;
   transform: scale(0);
+  transition: transform 1000ms ease-in-out;
 }
-section .menu .card-informations .informations-icon:active {
+section .menu .card-informations .informations-icon:hover, section .menu .card-informations .informations-icon:active {
   color: red;
 }
-section .menu .card-informations .informations-icon:active .heart-not {
+section .menu .card-informations .informations-icon:hover .heart-not, section .menu .card-informations .informations-icon:active .heart-not {
   display: none;
 }
-section .menu .card-informations .informations-icon:active .heart-active {
+section .menu .card-informations .informations-icon:hover .heart-active, section .menu .card-informations .informations-icon:active .heart-active {
   display: flex;
   transform: scale(1);
-  transition: 1000ms ease-in-out;
-}
-section .menu .card-informations .informations-icon:hover {
-  color: red;
-}
-section .menu .card-informations .informations-icon:hover .heart-not {
-  display: none;
-}
-section .menu .card-informations .informations-icon:hover .heart-active {
-  display: flex;
-  transform: scale(1);
-  transition: 1000ms ease-in-out;
 }
 section .menu .card-menu {
   display: flex;
@@ -174,9 +164,13 @@ section .menu .card-menu .card-plats .check-animation {
   background-color: #99e2d0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  opacity: 0; /* Caché par défaut */
+  visibility: hidden; /* Empêche les interactions lorsque caché */
+  transition: opacity 1000ms ease-in-out, visibility 1000ms ease-in-out;
 }
-section .menu .card-menu :hover .card-plats.check-animation {
-  display: none;
+section .menu .card-menu .card-plats:hover .check-animation {
+  opacity: 1; /* Rend visible */
+  visibility: visible; /* Permet les interactions */
 }
 section .CTA {
   display: flex;

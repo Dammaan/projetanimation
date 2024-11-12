@@ -17,7 +17,7 @@
     align-items: center;
     animation: loader 1s linear;
     opacity: 0;
-    display: none;
+    visibility: hidden;
 
     & .--logo {
         margin: 100px 0 100px 0;

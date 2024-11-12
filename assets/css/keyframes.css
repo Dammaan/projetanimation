@@ -9,12 +9,13 @@
 @keyframes loader {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   99% {
     opacity: 0;
   }
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }/*# sourceMappingURL=keyframes.css.map */

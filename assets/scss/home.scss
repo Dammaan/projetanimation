@@ -17,6 +17,7 @@
     align-items: center;
     animation: loader 1s linear;
     opacity: 0;
+    display: none;
 
     & .--logo {
         margin: 100px 0 100px 0;
@@ -117,6 +118,12 @@ header {
             background-color: $main-secondary-color;
             border-radius: 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+
+            &:hover {
+                & i {
+                   color:$primary-color; 
+                }
+            }
         }
 
         & .number {
@@ -131,13 +138,13 @@ header {
         color: $main-color;
         position: relative;
         top: 0px;
-        left: -15px;
+        left: -10px;
         }
     }
 
-        & i {
-        color: grey;
-        margin-right: 15px;
+    & i {
+    color: grey;
+    margin-right: 15px;  
     }
 }
 
@@ -313,3 +320,67 @@ footer {
     
 
 }
+
+
+/********Responsive********/
+@media (min-width: 1024px) {
+
+/********FONCTIONNEMENT********/
+    .fonctionnement{    
+    
+        margin: 50px 180px 50px 180px;
+        
+    
+        & .etape-cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            
+            & .etape{
+                width: 335px;
+            }
+        }
+    }
+
+    
+}
+
+/********RESTAURANT********/
+
+    .restaurant {
+        padding: 20px 180px 50px 180px;
+        
+        & .restaurant-informations {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 100px;
+
+            & .restaurant-card {
+                width: 400px;
+            }
+    }
+
+
+    }
+
+/********FOOTER********/
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        padding: 30px 50px 20px 25px;
+
+        gap: 60px;
+    
+        & .footer-nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+    }
+    

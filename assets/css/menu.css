@@ -164,6 +164,20 @@ section .menu .card-menu .card-plats .card-price {
   margin-right: 15px;
   margin-bottom: 14px;
 }
+section .menu .card-menu .card-plats .check-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 69px;
+  width: 59px;
+  background-color: #99e2d0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+section .menu .card-menu :hover .card-plats.check-animation {
+  display: none;
+}
 section .CTA {
   display: flex;
   justify-content: center;
@@ -206,7 +220,7 @@ footer .footer-nav i {
 }
 
 /********Responsive********/
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
   /********Menu********/
   section {
     display: flex;

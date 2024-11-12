@@ -155,6 +155,25 @@ section {
                     margin-right: 15px;
                     margin-bottom: 14px
                 }
+
+                & .check-animation {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    height: 69px;
+                    width: 59px;
+                    background-color: $tertiary-color;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+            }
+        :hover {
+             & .card-plats{
+                &.check-animation {
+                display: none;
+            }
+             }
             }
         }
     }
@@ -204,7 +223,7 @@ footer {
 
 
 /********Responsive********/
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
 
 /********Menu********/
 section {

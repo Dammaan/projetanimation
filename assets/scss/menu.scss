@@ -177,15 +177,11 @@ section {
 
         & .btn {
             margin: 20px;
-            @include button-color();
-        }
-
-        & .btn__text {
+           @include button-color();
+            
+            & .btn__text {
             @include button-text();
-        }
-        & .btn__bg {
-            @include btn__bg();
-
+            }
         }
     }
 }

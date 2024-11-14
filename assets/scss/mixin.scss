@@ -1,36 +1,27 @@
 @import 'variable.css' ;
 
 @mixin button-color {
-    width: 186px;
-    height: 50px;
+    width: 200px;
+    height: 45px;
     background: linear-gradient($secondary-color, $primary-color);
     border-radius: 30px;
-    filter: drop-shadow(0 4px 4px #00000043); 
-    position: relative;
-    z-index: 1;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.26); 
+    border: none;
 
-    &:hover{
-        &.btn__bg {
-            opacity:1;
+    &:hover {
+        filter: brightness(1.10); 
+        box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.26);
         }
-        
-    } 
+        .btn__text {
+            color: lighten($main-color, 30%);
+        }
 }
 
 @mixin button-text {
     color: $main-color;
     font-size: 16px;
     font-weight: normal;
+    display: inline;
+    justify-content: center;
 }
 
-@mixin btn__bg{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
-}

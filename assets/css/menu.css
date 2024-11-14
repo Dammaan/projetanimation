@@ -184,33 +184,26 @@ section .CTA {
 }
 section .CTA .btn {
   margin: 20px;
-  width: 186px;
+  width: 196px;
   height: 50px;
   background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 30px;
-  text-decoration: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.262745098));
-  position: relative;
-  z-index: 1;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.26);
+  border: none;
 }
-section .CTA .btn:hover.btn__bg {
-  opacity: 1;
+section .CTA .btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.26);
 }
-section .CTA .btn__text {
+section .CTA .btn .btn__text {
+  color: white;
+}
+section .CTA .btn .btn__text {
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
-}
-section .CTA .btn__bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: red;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
+  display: inline;
+  justify-content: center;
 }
 
 /********FOOTER********/

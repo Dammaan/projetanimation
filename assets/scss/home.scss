@@ -76,12 +76,14 @@ header {
      }
 
     & .btn {
-        @include button-color()
+        @include button-color();
+        
+        & .btn__text {
+        @include button-text()
+        }
     }
 
-    & .btn__text {
-    @include button-text()
-    }
+   
     
 }
 

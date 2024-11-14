@@ -97,20 +97,26 @@ header {
   margin-bottom: 0;
 }
 .exploration .btn {
-  width: 186px;
+  width: 196px;
   height: 50px;
   background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 30px;
-  text-decoration: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.262745098));
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.26);
+  border: none;
 }
 .exploration .btn:hover {
-  background-color: black;
+  filter: brightness(1.1);
+  box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.26);
 }
-.exploration .btn__text {
+.exploration .btn .btn__text {
+  color: white;
+}
+.exploration .btn .btn__text {
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
+  display: inline;
+  justify-content: center;
 }
 
 /********Fonctionnement********/

@@ -96,7 +96,7 @@ header {
 .exploration h1 {
   margin-bottom: 0;
 }
-.exploration .button-color {
+.exploration .btn {
   width: 186px;
   height: 50px;
   background: linear-gradient(#FF79DA, #9356dc);
@@ -104,7 +104,10 @@ header {
   text-decoration: none;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.262745098));
 }
-.exploration .button-text {
+.exploration .btn:hover {
+  background-color: black;
+}
+.exploration .btn__text {
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;

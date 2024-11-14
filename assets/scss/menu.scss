@@ -151,15 +151,21 @@ section {
                     background-color: $tertiary-color;
                     border-top-right-radius: 20px;
                     border-bottom-right-radius: 20px;
-                    opacity: 0;  /* Caché par défaut */
-                    visibility: hidden;  /* Empêche les interactions lorsque caché */
-                    transition: opacity 1000ms ease-in-out, visibility 1000ms ease-in-out;
+                    opacity: 0; 
+                    visibility: hidden; 
+                    display: none;
+                    transition: opacity 2000ms ease-in-out, visibility 2000ms ease-in-out;
                 }
             
                 &:hover .check-animation {
-                    opacity: 1;  /* Rend visible */
-                    visibility: visible;  /* Permet les interactions */
+                    opacity: 1; 
+                    visibility: visible;
+                    display: flex; 
                 }
+            &:hover {
+             display: flex;
+             justify-content: space-between;       
+            }
             }
         }
             
@@ -169,13 +175,17 @@ section {
         justify-content: center;
         margin-bottom: 20px;
 
-        & .button-color {
+        & .btn {
             margin: 20px;
             @include button-color();
         }
 
-        & .button-text {
+        & .btn__text {
             @include button-text();
+        }
+        & .btn__bg {
+            @include btn__bg();
+
         }
     }
 }

@@ -75,11 +75,11 @@ header {
         margin-bottom: 0;
      }
 
-    & .button-color {
+    & .btn {
         @include button-color()
     }
 
-    & .button-text {
+    & .btn__text {
     @include button-text()
     }
     

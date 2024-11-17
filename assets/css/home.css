@@ -44,6 +44,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   animation: loader 3s linear forwards;
   opacity: 0;
   visibility: hidden;
@@ -60,6 +61,7 @@ main {
 .loader .--text {
   color: #ffffff;
   position: relative;
+  margin-bottom: 80px;
 }
 .loader .--text h1 {
   font-weight: lighter;
@@ -97,8 +99,8 @@ header {
   margin-bottom: 0;
 }
 .exploration .btn {
-  width: 196px;
-  height: 50px;
+  width: 200px;
+  height: 45px;
   background: linear-gradient(#FF79DA, #9356dc);
   border-radius: 30px;
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.26);
@@ -323,33 +325,32 @@ footer .footer-nav i {
   .fonctionnement .etape-cards .etape {
     width: 335px;
   }
-}
-/********RESTAURANT********/
-.restaurant {
-  padding: 20px 180px 50px 180px;
-}
-.restaurant .restaurant-informations {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 100px;
-}
-.restaurant .restaurant-informations .restaurant-card {
-  width: 400px;
-}
-
-/********FOOTER********/
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: end;
-  padding: 30px 50px 20px 25px;
-  gap: 60px;
-}
-footer .footer-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-  margin-top: 20px;
+  /********RESTAURANT********/
+  .restaurant {
+    padding: 20px 180px 50px 180px;
+  }
+  .restaurant .restaurant-informations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .restaurant .restaurant-informations .restaurant-card {
+    width: 400px;
+  }
+  /********FOOTER********/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    padding: 30px 50px 20px 25px;
+    gap: 60px;
+  }
+  footer .footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -99,20 +99,31 @@ section {
         margin: 15px;
         gap: 12px;
         margin-top: 40px;
-    
+        opacity: 0;
+        animation: apparition 5s ease-out forwards;
+        animation-delay: 0s;
+
         & h2 {
             text-align: left;
             font-size: 16px;
             font-weight: lighter;
-            text-decoration: underline $tertiary-color 4px;
+            margin-bottom: 5px;
+
         }
-    
+
+        & .underline-title {
+                width: 40px; 
+                border-bottom: solid $tertiary-color 5px; 
+                display: block; 
+            }
+        
         & h3 {
             font-size: 18px;
             font-weight: normal;
             margin: 0;
         }
-    
+
+       
         & .card-plats {
             display: flex;
             flex-direction: row;
@@ -123,7 +134,8 @@ section {
             width: 349px;
             align-items: center;
             height: 69px;
-            position: relative; 
+            position: relative;
+            overflow: hidden;
 
             & .plat-informations {
                 display: flex;
@@ -153,7 +165,8 @@ section {
                 align-items: end;
                 margin-right: 15px;
                 margin-bottom: 25px;
-                transform: translateX(59px); 
+                transform: translateX(59px);
+                transition: transform 150ms ease-in-out; 
             }
     
             & .check-animation {
@@ -169,29 +182,27 @@ section {
                 visibility: hidden; 
                 transform: translateX(100%); 
                 transition: 
-                    visibility 0.5s ease-in-out, 
-                    transform 0.5s ease-in-out; 
-        
+                    visibility 150ms ease-in-out, 
+                    transform 150ms ease-in-out;
             }
-    
+        
             &:hover {
                 .check-animation {
                     visibility: visible;
-                    transform: translateX(0);
-            
-                    .card-price {
-                        transform: translateX(0);
-                        transition: transform 0.5s ease-in-out;
-                    }
+                    transform: translateX(0); 
                 }
-            }
+        
+                .card-price {
+                    transform: translateX(0); 
+                }
+            }             
         }
-    }
-            
-    }
+    }           
+}
     & .CTA {
         display: flex;
         justify-content: center;
+        padding-bottom: 20px;
 
         & .btn {
             margin: 20px;
@@ -277,4 +288,4 @@ section {
         margin-top: 20px;
         }
     }
-}  
+}

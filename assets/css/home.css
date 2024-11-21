@@ -25,6 +25,7 @@ h4 {
 
 body {
   margin: 0;
+  font-family: Roboto;
 }
 
 main {
@@ -83,7 +84,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 17px;
-  box-shadow: 0 5px 15px black;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.831372549);
   background-color: #eaeaea;
 }
 
@@ -92,7 +94,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   padding: 20px 15px 40px 15px;
 }
 .exploration h1 {
@@ -140,7 +142,7 @@ header {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -177,7 +179,7 @@ header {
 
 /********RESTAURANT********/
 .restaurant {
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -312,6 +314,11 @@ footer .footer-nav i {
 
 /********Responsive********/
 @media (min-width: 1024px) {
+  /********Exploration********/
+  .exploration h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
   /********FONCTIONNEMENT********/
   .fonctionnement {
     margin: 50px 180px 50px 180px;
@@ -319,7 +326,6 @@ footer .footer-nav i {
   .fonctionnement .etape-cards {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 50px;
   }
   .fonctionnement .etape-cards .etape {
@@ -336,7 +342,7 @@ footer .footer-nav i {
     gap: 100px;
   }
   .restaurant .restaurant-informations .restaurant-card {
-    width: 400px;
+    width: calc(50% - 100px);
   }
   /********FOOTER********/
   footer {

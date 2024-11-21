@@ -57,7 +57,7 @@ main {
 .loader .--icon {
   color: #ffffff;
   animation: animation-loader 3s linear infinite;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 .loader .--text {
   color: #ffffff;
@@ -65,7 +65,20 @@ main {
   margin-bottom: 80px;
 }
 .loader .--text h1 {
-  font-weight: lighter;
+  font-weight: 300;
+  font-size: 30px;
+}
+.loader .--text .--1 {
+  opacity: 0;
+  animation: disparition 1500ms ease-in-out;
+}
+.loader .--text .--2 {
+  opacity: 0;
+  animation: apparition 1000ms 1500ms ease-in-out forwards;
+  position: relative;
+  bottom: 75px;
+  font-weight: bolder;
+  font-size: 45px;
 }
 
 /********HEADER********/
@@ -314,6 +327,11 @@ footer .footer-nav i {
 
 /********Responsive********/
 @media (min-width: 1024px) {
+  /********Localisation********/
+  .localisation {
+    margin-bottom: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.831372549);
+  }
   /********Exploration********/
   .exploration h1 {
     font-size: 40px;

@@ -25,13 +25,13 @@
         width: 250px;
     }
 
-    & .--icon {
+    & .loader--icon {
         color: $main-color;
         animation: animation-loader 3s linear infinite;
         margin-bottom: 50px;
     }
 
-    & .--text {
+    & .loader--text {
         color: $main-color;
         position: relative;
         margin-bottom: 80px; 
@@ -41,18 +41,17 @@
             font-size: 30px;
         }
 
-        & .--1 {
+        & .text--1 {
             opacity: 0;
             animation:  disparition 1500ms ease-in-out;
 
         }
 
-        & .--2 {
+        & .text--2 {
             opacity: 0;
             animation: apparition 1000ms 1500ms ease-in-out forwards;
             position: relative;
             bottom: 75px;
-            font-weight: bolder;
             font-size: 45px;
             
 
@@ -264,43 +263,11 @@ text-align: start;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    bottom: 35px;
+    bottom: 25px;
     right: 25px;
-
-    .heart-not{
-    display: flex; 
-    }
-
-    .heart-active{
-    display: none;
-    transform: scale(0);
-    }
-    
-
-    &:active{
-        .heart-not {
-            display: none;
-        }
-        .heart-active{
-            display: flex;
-            transform: scale(1) ;
-            transition:  1000ms ease-in-out;
-        }
-        color:red
-    }
-
-    &:hover{
-        .heart-not {
-            display: none;
-        }
-        .heart-active{
-            display: flex;
-            transform: scale(1) ;
-            transition:  1000ms ease-in-out;
-        }
-        color:red
-    }
-}    
+    font-size: 24px;
+    @include heart-animation()
+}
 
 .restaurant>h1{
     text-align: start;
@@ -365,10 +332,6 @@ footer {
             display: flex;
             flex-direction: row;
             gap: 50px;
-            
-            & .etape{
-                width: 335px;
-            }
         }
     }
 

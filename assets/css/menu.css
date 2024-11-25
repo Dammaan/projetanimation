@@ -25,6 +25,7 @@ h4 {
 body {
   margin: 0;
   font-family: Roboto;
+  min-width: 360px;
 }
 
 main {
@@ -63,6 +64,14 @@ main {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /********HEADER********/
@@ -121,23 +130,31 @@ section .menu .card-informations .informations-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 24px;
+  position: relative;
 }
-section .menu .card-informations .informations-icon.heart-not {
-  display: flex;
+section .menu .card-informations .informations-icon .heart-empty {
+  transition: opacity 450ms ease-in;
+  opacity: 1;
 }
-section .menu .card-informations .informations-icon.heart-active {
-  display: none;
-  transform: scale(0.1);
-  transition: transform 5s ease-in-out;
+section .menu .card-informations .informations-icon .heart-full {
+  position: absolute;
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+  background: linear-gradient(#FF79DA, #9356dc);
+  color: #000;
+  opacity: 0;
+  transform: scale(0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-section .menu .card-informations .informations-icon:hover .heart-not, section .menu .card-informations .informations-icon:active .heart-not {
-  display: none;
-}
-section .menu .card-informations .informations-icon:hover .heart-active, section .menu .card-informations .informations-icon:active .heart-active {
-  display: flex;
+section .menu .card-informations .informations-icon:hover .heart-full, section .menu .card-informations .informations-icon:active .heart-full {
+  opacity: 1;
   transform: scale(1);
 }
-section .menu .card-menu {
+section .menu .card-informations .informations-icon:hover .heart-empty, section .menu .card-informations .informations-icon:active .heart-empty {
+  opacity: 0;
+}
+section .card-menu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -147,32 +164,32 @@ section .menu .card-menu {
   opacity: 0;
   animation: apparition 1000ms 1500ms ease-out forwards;
 }
-section .menu .card-menu:nth-child(1) {
+section .card-menu:nth-child(1) {
   animation-delay: 0s;
 }
-section .menu .card-menu:nth-child(2) {
+section .card-menu:nth-child(2) {
   animation-delay: 0.5s;
 }
-section .menu .card-menu:nth-child(3) {
+section .card-menu:nth-child(3) {
   animation-delay: 1s;
 }
-section .menu .card-menu h2 {
+section .card-menu h2 {
   text-align: left;
   font-size: 16px;
   font-weight: lighter;
   margin-bottom: 5px;
 }
-section .menu .card-menu .underline-title {
+section .card-menu .underline-title {
   width: 40px;
   border-bottom: solid #99e2d0 5px;
   display: block;
 }
-section .menu .card-menu h3 {
+section .card-menu h3 {
   font-size: 18px;
   font-weight: normal;
   margin: 0;
 }
-section .menu .card-menu .card-plats {
+section .card-menu .card-plats {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -185,7 +202,7 @@ section .menu .card-menu .card-plats {
   position: relative;
   overflow: hidden;
 }
-section .menu .card-menu .card-plats .plat-informations {
+section .card-menu .card-plats .plat-informations {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -193,17 +210,21 @@ section .menu .card-menu .card-plats .plat-informations {
   width: 100%;
   height: 100%;
 }
-section .menu .card-menu .card-plats .card-descriptif {
+section .card-menu .card-plats .card-descriptif {
+  width: calc(100% - 70px);
   display: flex;
   flex-direction: column;
   margin-left: 15px;
 }
-section .menu .card-menu .card-plats .card-descriptif h4 {
+section .card-menu .card-plats .card-descriptif h4 {
   font-size: 15px;
   font-weight: lighter;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-section .menu .card-menu .card-plats .card-price {
+section .card-menu .card-plats .card-price {
   display: flex;
   height: 100%;
   flex-direction: row;
@@ -213,7 +234,10 @@ section .menu .card-menu .card-plats .card-price {
   transform: translateX(59px);
   transition: transform 150ms ease-in-out;
 }
-section .menu .card-menu .card-plats .check-animation {
+section .card-menu .card-plats .card-price h3 {
+  font-size: 15px;
+}
+section .card-menu .card-plats .check-animation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,11 +251,11 @@ section .menu .card-menu .card-plats .check-animation {
   transform: translateX(100%);
   transition: visibility 150ms ease-in-out, transform 150ms ease-in-out;
 }
-section .menu .card-menu .card-plats:hover .check-animation {
+section .card-menu .card-plats:hover .check-animation {
   visibility: visible;
   transform: translateX(0);
 }
-section .menu .card-menu .card-plats:hover .card-price {
+section .card-menu .card-plats:hover .card-price {
   transform: translateX(0);
 }
 section .CTA {

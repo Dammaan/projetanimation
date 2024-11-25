@@ -26,6 +26,7 @@ h4 {
 body {
   margin: 0;
   font-family: Roboto;
+  min-width: 360px;
 }
 
 main {
@@ -54,30 +55,29 @@ main {
   margin: 80px 0;
   width: 250px;
 }
-.loader .--icon {
+.loader .loader--icon {
   color: #ffffff;
   animation: animation-loader 3s linear infinite;
   margin-bottom: 50px;
 }
-.loader .--text {
+.loader .loader--text {
   color: #ffffff;
   position: relative;
   margin-bottom: 80px;
 }
-.loader .--text h1 {
+.loader .loader--text h1 {
   font-weight: 300;
   font-size: 30px;
 }
-.loader .--text .--1 {
+.loader .loader--text .text--1 {
   opacity: 0;
   animation: disparition 1500ms ease-in-out;
 }
-.loader .--text .--2 {
+.loader .loader--text .text--2 {
   opacity: 0;
   animation: apparition 1000ms 1500ms ease-in-out forwards;
   position: relative;
   bottom: 75px;
-  font-weight: bolder;
   font-size: 45px;
 }
 
@@ -267,37 +267,30 @@ header {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  bottom: 35px;
+  bottom: 25px;
   right: 25px;
+  font-size: 24px;
 }
-.informations-icon .heart-not {
-  display: flex;
+.informations-icon .heart-empty {
+  transition: opacity 450ms ease-in;
+  opacity: 1;
 }
-.informations-icon .heart-active {
-  display: none;
+.informations-icon .heart-full {
+  position: absolute;
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+  background: linear-gradient(#FF79DA, #9356dc);
+  color: #000;
+  opacity: 0;
   transform: scale(0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.informations-icon:active {
-  color: red;
-}
-.informations-icon:active .heart-not {
-  display: none;
-}
-.informations-icon:active .heart-active {
-  display: flex;
+.informations-icon:hover .heart-full, .informations-icon:active .heart-full {
+  opacity: 1;
   transform: scale(1);
-  transition: 1000ms ease-in-out;
 }
-.informations-icon:hover {
-  color: red;
-}
-.informations-icon:hover .heart-not {
-  display: none;
-}
-.informations-icon:hover .heart-active {
-  display: flex;
-  transform: scale(1);
-  transition: 1000ms ease-in-out;
+.informations-icon:hover .heart-empty, .informations-icon:active .heart-empty {
+  opacity: 0;
 }
 
 .restaurant > h1 {
@@ -345,9 +338,6 @@ footer .footer-nav i {
     display: flex;
     flex-direction: row;
     gap: 50px;
-  }
-  .fonctionnement .etape-cards .etape {
-    width: 335px;
   }
   /********RESTAURANT********/
   .restaurant {

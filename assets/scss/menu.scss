@@ -67,27 +67,9 @@ section {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
-                &.heart-not {
-                    display: flex;
-                }
-        
-                &.heart-active {
-                    display: none;
-                    transform: scale(0.1);
-                    transition: transform 5s ease-in-out;
-                }
-        
-            &:hover,
-            &:active {
-                .heart-not {
-                    display: none;
-                }
-                
-                .heart-active {
-                    display: flex;
-                    transform: scale(1);
-                }
+                font-size: 24px;
+                position: relative;
+                @include heart-animation()
             }
         }
     }
@@ -157,6 +139,7 @@ section {
             }
     
             & .card-descriptif {
+                width: calc(100% - 70px);
                 display: flex;
                 flex-direction: column;
                 margin-left: 15px;
@@ -164,7 +147,10 @@ section {
                 & h4 {
                     font-size: 15px;
                     font-weight: lighter;
-                    margin: 0;
+                    margin: 0; 
+                    white-space: nowrap;         
+                    overflow: hidden;           
+                    text-overflow: ellipsis
                 }
             }
     
@@ -177,6 +163,9 @@ section {
                 margin-bottom: 25px;
                 transform: translateX(59px);
                 transition: transform 150ms ease-in-out; 
+                & h3 {
+                    font-size: 15px;
+                }
             }
     
             & .check-animation {
@@ -208,7 +197,7 @@ section {
             }             
         }
     }           
-}
+
     & .CTA {
         display: flex;
         justify-content: center;

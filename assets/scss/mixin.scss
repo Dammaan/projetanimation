@@ -25,3 +25,34 @@
     justify-content: center;
 }
 
+@mixin heart-animation {
+
+    
+    .heart-empty {
+        transition: opacity 450ms ease-in;
+        opacity: 1; 
+    }
+
+    .heart-full {
+        position: absolute;
+        transition: opacity 400ms ease-in, transform 400ms ease-in;
+        background: linear-gradient($secondary-color, $primary-color);
+        color: #000;
+        opacity: 0; 
+        transform: scale(0); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover,
+    &:active {
+        .heart-full {
+            opacity: 1; 
+            transform: scale(1); 
+        }
+        .heart-empty {
+            opacity: 0; 
+        }
+    }
+}
+

@@ -83,7 +83,7 @@ main {
 
 /********HEADER********/
 header {
-  height: 63px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +114,7 @@ header {
   margin-bottom: 0;
 }
 .exploration .btn {
+  margin-top: 15px;
   width: 200px;
   height: 45px;
   background: linear-gradient(#FF79DA, #9356dc);
@@ -211,7 +212,7 @@ header {
 .restaurant .restaurant-informations .restaurant-card {
   display: flex;
   flex-direction: column;
-  width: 340px;
+  width: 90%;
   height: 251px;
   border-radius: 15px;
   background-color: #ffffff;
@@ -263,14 +264,6 @@ header {
   margin-bottom: 0;
 }
 
-.informations-icon {
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-  font-size: 24px;
-}
 .informations-icon .heart-empty {
   transition: opacity 450ms ease-in;
   opacity: 1;
@@ -291,6 +284,14 @@ header {
 }
 .informations-icon:hover .heart-empty, .informations-icon:active .heart-empty {
   opacity: 0;
+}
+.informations-icon i {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 25px;
+  right: 25px;
+  font-size: 24px;
 }
 
 .restaurant > h1 {
@@ -338,6 +339,7 @@ footer .footer-nav i {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    width: 95%;
   }
   /********RESTAURANT********/
   .restaurant {
@@ -350,7 +352,7 @@ footer .footer-nav i {
     gap: 100px;
   }
   .restaurant .restaurant-informations .restaurant-card {
-    width: calc(50% - 100px);
+    width: 45%;
   }
   /********FOOTER********/
   footer {

@@ -62,7 +62,7 @@
 
 /********HEADER********/
 header {
-    height: 63px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +97,7 @@ header {
      }
 
     & .btn {
+        margin-top: 15px;
         @include button-color();
         
         & .btn__text {
@@ -195,7 +196,7 @@ text-align: start;
         & .restaurant-card {
             display: flex;
             flex-direction: column;
-            width: 340px;
+            width: 90%;
             height: 251px;
             border-radius: 15px;
             background-color: $main-color;
@@ -259,14 +260,17 @@ text-align: start;
     }
 }
 
-.informations-icon{
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    font-size: 24px;
-    @include heart-animation()
+.informations-icon{    
+    @include heart-animation();
+    
+       & i {
+        position: absolute; 
+        flex-direction: column;
+        justify-content: center;
+        bottom: 25px;
+        right: 25px;
+        font-size: 24px;
+     }
 }
 
 .restaurant>h1{
@@ -308,6 +312,7 @@ footer {
 /********Responsive********/
 @media (min-width: 1024px) {
 
+
 /********Localisation********/
 .localisation {
     margin-bottom: 0;
@@ -332,6 +337,7 @@ footer {
             display: flex;
             flex-direction: row;
             gap: 50px;
+            width: 95%;
         }
     }
 
@@ -349,7 +355,7 @@ footer {
         gap: 100px;
 
             & .restaurant-card {
-                width: calc(50% - 100px);
+                width: calc(90% / 2);
             }
     }
 

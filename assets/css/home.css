@@ -26,7 +26,7 @@ h4 {
 body {
   margin: 0;
   font-family: Roboto;
-  min-width: 360px;
+  min-width: 360px max-width 1900px;
 }
 
 main {
@@ -349,10 +349,11 @@ footer .footer-nav i {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 100px;
   }
   .restaurant .restaurant-informations .restaurant-card {
     width: 45%;
+    margin-bottom: 3%;
+    margin-right: 3%;
   }
   /********FOOTER********/
   footer {

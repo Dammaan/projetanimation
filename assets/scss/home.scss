@@ -308,7 +308,6 @@ footer {
 
 }
 
-
 /********Responsive********/
 @media (min-width: 1024px) {
 
@@ -329,7 +328,6 @@ footer {
 
 /********FONCTIONNEMENT********/
     .fonctionnement{    
-    
         margin: 50px 180px 50px 180px;
         
     
@@ -352,10 +350,12 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 100px;
+
 
             & .restaurant-card {
                 width: calc(90% / 2);
+                margin-bottom: 3%;
+                margin-right: 3%;
             }
     }
 
@@ -382,4 +382,4 @@ footer {
     }
 
 }
-    
+ 

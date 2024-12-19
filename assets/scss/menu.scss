@@ -116,9 +116,6 @@ section {
         }
 
         & .card-plats {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             background-color: $main-color;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.199);
             border-radius: 20px;
@@ -137,12 +134,6 @@ section {
             }
         
             & .card-price {
-                display: flex;
-                height: 100%;
-                flex-direction: row;
-                align-items: center;
-                margin-right: 20px;
-                margin-left: 10px;
                 margin-top: 25px;
                 transform: translateX(100%);
                 transition: visibility 150ms ease-in-out, transform 150ms ease-in-out;
@@ -184,7 +175,7 @@ section {
                 align-items: center;
                 color: white;
                 height: 69px;
-                width: 59px;
+                width: 70px;
                 background-color: $tertiary-color;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
@@ -197,6 +188,7 @@ section {
                 .check-animation {
                     visibility: visible;
                     transform: translateX(0);
+                    padding-right: 10px;
                 }
         
                 .card-price {
